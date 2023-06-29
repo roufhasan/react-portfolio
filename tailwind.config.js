@@ -7,12 +7,15 @@ export default {
       primary: ["DM Sans", "sans-serif"],
       secondary: ["Fasthand", "cursive"],
     },
-    colors: {
-      primaryBlue: "#3700ff",
-      primaryBlack: "#292930",
-      secondary: "#8a90a2",
-      white: "#ffffff",
+    boxShadow: {
+      custom: "0 0 10px rgba(0, 0, 0, 0.09)",
     },
+    // colors: {
+    //   primaryBlue: "#3700ff",
+    //   primaryBlack: "#292930",
+    //   secondary: "#8a90a2",
+    //   white: "#ffffff",
+    // },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

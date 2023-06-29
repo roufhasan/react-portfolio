@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center max-w-[1366px] mx-auto px-[3%]">
+      <nav className="flex justify-between items-center px-[3%] shadow-custom w-full mb-16 lg:mb-0">
         <div className="uppercase font-secondary text-3xl font-bold">
           Rouf hasan
         </div>
@@ -18,26 +18,26 @@ const Navbar = () => {
         {/* ----- Menu Links For Large Device ----- */}
         <div className="hidden lg:flex gap-x-7 text-lg font-medium">
           <a
-            href="#"
-            className="py-5 text-primaryBlue relative hover:text-primaryBlack after:content-[''] after:bg-primaryBlue after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
+            href="#home"
+            className="py-5 text-[#292930] relative hover:text-primaryBlack after:content-[''] after:bg-[#3700ff] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
           >
             Home
           </a>
           <a
-            href="#"
-            className="py-5 text-primaryBlue relative hover:text-primaryBlack after:content-[''] after:bg-primaryBlue after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
+            href="#about"
+            className="py-5 text-[#292930] relative hover:text-primaryBlack after:content-[''] after:bg-[#3700ff] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
           >
             About
           </a>
           <a
-            href="#"
-            className="py-5 text-primaryBlue relative hover:text-primaryBlack after:content-[''] after:bg-primaryBlue after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
+            href="#projects"
+            className="py-5 text-[#292930] relative hover:text-primaryBlack after:content-[''] after:bg-[#3700ff] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
           >
-            Skills
+            Projects
           </a>
           <a
-            href="#"
-            className="py-5 text-primaryBlue relative hover:text-primaryBlack after:content-[''] after:bg-primaryBlue after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
+            href="#contact"
+            className="py-5 text-[#292930] relative hover:text-primaryBlack after:content-[''] after:bg-[#3700ff] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl"
           >
             Contact
           </a>
@@ -48,16 +48,16 @@ const Navbar = () => {
         <div className="w-full bg-[#a29bfe] h-screen flex flex-col gap-6 items-center justify-center fixed top-0 left-0 z-50 text-[#ff7675] font-medium">
           <ul className="flex flex-col gap-4 text-white">
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <HiX onClick={() => setMenu(true)} size={"32px"}></HiX>
