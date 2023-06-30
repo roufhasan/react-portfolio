@@ -1,0 +1,32 @@
+.fluenify {
+  background: url(../../assets/projects/fluentify.png);
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 8s;
+}
+
+.fluenify:hover {
+  background-position: bottom;
+}
+
+.toyVerse {
+  background: url(../../assets/projects/toyVerse.png);
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 8s;
+}
+
+.toyVerse:hover {
+  background-position: bottom;
+}
+
+.DesiFoodHut {
+  background: url(../../assets/projects/DesiFoodHut.png);
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 8s;
+}
+
+.DesiFoodHut:hover {
+  background-position: bottom;
+}
