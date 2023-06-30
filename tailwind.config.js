@@ -9,6 +9,7 @@ export default {
     },
     boxShadow: {
       custom: "0 0 10px rgba(0, 0, 0, 0.09)",
+      custom2: "0px 15px 10px -15px #111",
     },
     // colors: {
     //   primaryBlue: "#3700ff",

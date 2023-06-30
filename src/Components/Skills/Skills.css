@@ -1,0 +1,33 @@
+.shape {
+  animation: up-to-down 3s linear infinite;
+}
+
+.shape-2 {
+  animation: up-to-down-2 3s linear infinite;
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes up-to-down {
+    0% {
+      top: 64px;
+    }
+    50% {
+      top: 128px;
+    }
+    100% {
+      top: 64px;
+    }
+  }
+
+  @keyframes up-to-down-2 {
+    0% {
+      bottom: 64px;
+    }
+    50% {
+      bottom: 128px;
+    }
+    100% {
+      bottom: 64px;
+    }
+  }
+}
