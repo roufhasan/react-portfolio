@@ -1,6 +1,6 @@
 import rounded from "../../../src/assets/eGQOWH3tWe.json";
 import banner from "../../../src/assets/banner.json";
-import profile2 from "../../../src/assets/profile2.png";
+import profile from "../../../src/assets/profile.png";
 import Lottie from "lottie-react";
 import Typewriter from "typewriter-effect";
 import { HiDocumentArrowDown } from "react-icons/hi2";
@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="absolute top-0 left-5 -z-50">
           <Lottie className="" animationData={banner} loop={true} />
         </div>
-        <img src={profile2} className="w-full sm:w-3/4 sm:mx-auto" />
+        <img src={profile} className="w-full sm:w-3/4 sm:mx-auto" />
       </div>
       <div className="realtive mt-16 lg:mt-0 lg:w-1/2">
         <h3 className="text-2xl font-bold mb-2">
