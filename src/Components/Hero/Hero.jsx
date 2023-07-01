@@ -1,27 +1,33 @@
-import rounded from "../../../src/assets/eGQOWH3tWe.json";
-import banner from "../../../src/assets/banner.json";
-import profile from "../../../src/assets/profile.png";
+import movingCircle from "../../../src/assets/moving-circle.json";
+import miniShapes from "../../../src/assets/mini-shapes.json";
+import profileImg from "../../../src/assets/profile.png";
+import gitHubImg from "../../../src/assets/icons/github.png";
+import linkedInImg from "../../../src/assets/icons/linkedin.png";
+import twitterImg from "../../../src/assets/icons/twitter.png";
+import resume from "../../assets/resume/Rouf Hasan Hridoy's Resume.pdf";
 import Lottie from "lottie-react";
 import Typewriter from "typewriter-effect";
 import { HiDocumentArrowDown } from "react-icons/hi2";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
-import resume from "../../assets/resume/Rouf Hasan Hridoy's Resume.pdf";
 import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[780px] w-full flex flex-col lg:flex-row-reverse justify-between max-w-[1366px] mx-auto items-center px-[3%] pt-16 lg:px-0 relative"
+      className="min-h-[780px] w-full flex flex-col lg:flex-row-reverse justify-between max-w-[1366px] mx-auto items-center px-[3%] pt-16 pb-16 sm:pb-0 lg:px-0 relative"
     >
       <div className="w-full lg:w-1/2">
-        <div className="absolute top-0 right-0 lg:w-1/2 -z-50">
-          <Lottie className="" animationData={rounded} loop={true} />
+        <div className="absolute top-0 right-0 w-3/4 sm:w-1/2 -z-50">
+          <Lottie animationData={movingCircle} loop={true} />
         </div>
         <div className="absolute top-0 left-5 -z-50">
-          <Lottie className="" animationData={banner} loop={true} />
+          <Lottie
+            className="h-96 sm:h-auto"
+            animationData={miniShapes}
+            loop={true}
+          />
         </div>
-        <img src={profile} className="w-full sm:w-3/4 sm:mx-auto" />
+        <img src={profileImg} className="w-full sm:w-3/4 sm:mx-auto" />
       </div>
       <div className="realtive mt-16 lg:mt-0 lg:w-1/2">
         <h3 className="text-3xl font-bold mb-2">
@@ -41,42 +47,42 @@ const Hero = () => {
           />
         </div>
         <div>
-          {/* <p className="text-xl text-[#555] max-w-[550px] mb-6">
-            A passionate MERN Stack Developer based in Dhaka, Bangladesh. 📍
-          </p> */}
-          <a href={resume} download className="btn btn-primary text-white mr-9">
-            My Resume <HiDocumentArrowDown size={"22px"} />
+          <a
+            href={resume}
+            download
+            className="relative inline-block px-6 py-3 font-medium group mr-9"
+          >
+            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
+            <span className="absolute inset-0 w-full h-full bg-[#570df8] border-2 border-[#570df8] group-hover:bg-black group-hover:border-black rounded"></span>
+            <span className="relative text-white group-hover:text-white flex items-center">
+              My Resume <HiDocumentArrowDown className="ml-1" size={"22px"} />
+            </span>
           </a>
           <Link
             to="contact"
             smooth={true}
             duration={1500}
-            className="btn btn-outline"
+            className="relative inline-block px-6 py-3 font-medium group mt-9 sm:mt-0"
           >
-            Contact Me
+            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
+            <span className="absolute inset-0 w-full h-full bg-white border border-black group-hover:bg-black rounded"></span>
+            <span className="relative text-black group-hover:text-white">
+              Say Hello 👋
+            </span>
           </Link>
         </div>
-        <div className="bottom-10 mt-8 lg:mt-0">
-          {/* <div className="flex gap-x-8 justify-evenly lg:justify-normal">
-            <a
-              href="#"
-              className="flex items-center gap-x-3 font-semibold text-2xl text-[#1DA1F2]"
-            >
-              <FaTwitter></FaTwitter>{" "}
+        <div className="hidden lg:block absolute top-[38%] right-0 mt-8 lg:mt-0">
+          <div className="flex flex-col gap-8 justify-evenly lg:justify-normal bg-transparent">
+            <a href="https://twitter.com/roufhasan" target="_blanck">
+              <img src={twitterImg} alt="" className="w-12" />
             </a>
-            <a
-              href="#"
-              className="flex items-center gap-x-2 font-semibold text-2xl"
-            >
-              <FaGithub></FaGithub>{" "}
+            <a href="https://github.com/roufhasan" target="_blanck">
+              <img src={gitHubImg} alt="" className="w-12" />
             </a>
-            <a
-              href="#"
-              className="flex items-center gap-x-2 font-semibold text-2xl text-[#0077b5]"
-            >
-              <FaLinkedin></FaLinkedin>{" "}
+            <a href="https://bd.linkedin.com/roufhasan" target="_blanck">
+              <img src={linkedInImg} alt="" className="w-12" />
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

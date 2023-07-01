@@ -1,7 +1,9 @@
 import profile from "../../../src/assets/profile.png";
 import "./About.css";
 import Lottie from "lottie-react";
-import rounded from "../../../src/assets/eGQOWH3tWe.json";
+import movingCircle from "../../../src/assets/moving-circle.json";
+import { HiDocumentArrowDown } from "react-icons/hi2";
+import resume from "../../assets/resume/Rouf Hasan Hridoy's Resume.pdf";
 
 const About = () => {
   return (
@@ -39,11 +41,24 @@ const About = () => {
             outstanding web applications. If you are a business seeking a web
             presence or an employer looking to hire, feel free to get in touch.
           </p>
+          <div className="text-center lg:text-left">
+            <a
+              href={resume}
+              download
+              className="relative inline-block px-6 py-3 font-medium group mt-9"
+            >
+              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#5856e9c9] group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
+              <span className="absolute inset-0 w-full h-full bg-[#FFDC60]  border border-black group-hover:bg-black rounded"></span>
+              <span className="relative text-black group-hover:text-white flex items-center">
+                My Resume <HiDocumentArrowDown className="ml-1" size={"22px"} />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
       {
         <div className="absolute top-0 right-0 lg:w-[33%] -z-50">
-          <Lottie className="" animationData={rounded} loop={true} />
+          <Lottie className="" animationData={movingCircle} loop={true} />
         </div>
       }
     </section>

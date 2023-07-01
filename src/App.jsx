@@ -10,8 +10,8 @@ import SKills from "./Components/Skills/SKills";
 function App() {
   return (
     <div className="font-primary">
-      <Navbar />
-      <Hero />
+      <Navbar></Navbar>
+      <Hero></Hero>
       <SKills></SKills>
       <About></About>
       <Projects></Projects>

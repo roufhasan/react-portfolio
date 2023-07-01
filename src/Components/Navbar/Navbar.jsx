@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link
             to="home"
             smooth={true}
-            duration={1000}
+            duration={1500}
             className={`py-5 relative hover:text-primaryBlack after:content-[''] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl cursor-pointer ${
               colorChange
                 ? "after:bg-white text-white"
@@ -47,6 +47,18 @@ const Navbar = () => {
             }`}
           >
             Home
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={1500}
+            className={`py-5 relative hover:text-primaryBlack after:content-[''] after:h-[3px] after:absolute after:w-[0%] hover:after:w-[120%] after:duration-300 after:left-0 after:-bottom-[-5px] after:rounded-xl cursor-pointer ${
+              colorChange
+                ? "after:bg-white text-white"
+                : "after:bg-[#3700ff] text-[#292930]"
+            }`}
+          >
+            Skills
           </Link>
           <Link
             to="about"
@@ -89,7 +101,7 @@ const Navbar = () => {
       {/* ----- Hamburger Menu Links ----- */}
       {!menu && (
         <div className="w-full bg-white h-screen flex flex-col gap-6 items-center justify-center fixed top-0 z-50 text-[#ff7675] font-medium">
-          <ul className="flex flex-col gap-4 text-[#292930]">
+          <ul className="flex flex-col gap-4 text-[#292930] text-xl text-center">
             <li>
               <Link
                 onClick={() => setMenu(true)}
@@ -98,6 +110,16 @@ const Navbar = () => {
                 duration={1500}
               >
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setMenu(true)}
+                to="skills"
+                smooth={true}
+                duration={1500}
+              >
+                Skills
               </Link>
             </li>
             <li>
