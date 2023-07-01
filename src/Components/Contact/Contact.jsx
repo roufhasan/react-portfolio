@@ -5,7 +5,7 @@ import mapImg from "../../../src/assets/icons/map-marker.png";
 const Contact = () => {
   return (
     <section id="contact" className="py-[120px] bg-[#292930] relative">
-      <div className="max-w-[1366px] mx-auto px-[3%] lg:px-0">
+      <div className="max-w-[1366px] mx-auto px-[3%]">
         <div className="flex items-center justify-center gap-x-3">
           <div className="w-3 h-3 rounded-full bg-[#ffd109]"></div>
           <p className="text-lg text-[#8a90a2]">Contact</p>

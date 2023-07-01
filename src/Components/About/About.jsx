@@ -7,7 +7,10 @@ import resume from "../../assets/resume/Rouf Hasan Hridoy's Resume.pdf";
 
 const About = () => {
   return (
-    <section id="about" className="max-w-[1366px] mx-auto py-[120px] relative">
+    <section
+      id="about"
+      className="max-w-[1366px] mx-auto py-[120px] relative px-[3%]"
+    >
       <div className="flex items-center justify-center gap-x-3">
         <div className="w-3 h-3 rounded-full bg-[#ffd109]"></div>
         <p className="text-lg text-[#8a90a2]">About Me</p>
