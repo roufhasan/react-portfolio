@@ -26,7 +26,6 @@ const Footer = () => {
             <img src={gitHubImg} alt="" className="w-12" />
           </a>
         </div>
-
         <p className="text-center mt-10 text-gray-400">
           Copyright © {year} - All right reserved by Rouf Hasan Hridoy
         </p>
