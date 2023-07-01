@@ -5,12 +5,14 @@ import Lottie from "lottie-react";
 import Typewriter from "typewriter-effect";
 import { HiDocumentArrowDown } from "react-icons/hi2";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import resume from "../../assets/resume/Rouf Hasan Hridoy's Resume.pdf";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
     <section
-      id="#home"
-      className="min-h-[730px] w-full flex flex-col lg:flex-row-reverse justify-between max-w-[1366px] mx-auto items-center px-[3%] lg:px-0 relative"
+      id="home"
+      className="min-h-[780px] w-full flex flex-col lg:flex-row-reverse justify-between max-w-[1366px] mx-auto items-center px-[3%] pt-16 lg:px-0 relative"
     >
       <div className="w-full lg:w-1/2">
         <div className="absolute top-0 right-0 lg:w-1/2 -z-50">
@@ -22,15 +24,13 @@ const Hero = () => {
         <img src={profile} className="w-full sm:w-3/4 sm:mx-auto" />
       </div>
       <div className="realtive mt-16 lg:mt-0 lg:w-1/2">
-        <h3 className="text-2xl font-bold mb-2">
+        <h3 className="text-3xl font-bold mb-2">
           Hi, <span className="text-[#5956e9]">I&apos;m</span>
         </h3>
-        <h2 className="text-2xl font-bold">
-          <span className="text-6xl font-bold text-[#292930]">
-            Rouf Hasan Hridoy
-          </span>
+        <h2 className="text-[50px] sm:text-[66px] font-bold text-[#292930]">
+          Rouf Hasan Hridoy
         </h2>
-        <div className="font-semibold text-[#8a90a2] text-2xl lg:text-3xl my-6">
+        <div className="font-semibold text-[#5956e9] text-2xl lg:text-4xl mt-6 mb-16">
           <Typewriter
             options={{
               autoStart: true,
@@ -41,16 +41,23 @@ const Hero = () => {
           />
         </div>
         <div>
-          <p className="text-xl text-[#555] max-w-[550px] mb-6">
+          {/* <p className="text-xl text-[#555] max-w-[550px] mb-6">
             A passionate MERN Stack Developer based in Dhaka, Bangladesh. 📍
-          </p>
-          <button className="btn btn-primary text-white mr-9">
+          </p> */}
+          <a href={resume} download className="btn btn-primary text-white mr-9">
             My Resume <HiDocumentArrowDown size={"22px"} />
-          </button>
-          <button className="btn btn-outline">Contact Me</button>
+          </a>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1500}
+            className="btn btn-outline"
+          >
+            Contact Me
+          </Link>
         </div>
-        <div className="lg:absolute bottom-10 mt-8 lg:mt-0">
-          <div className="flex gap-x-8 justify-evenly lg:justify-normal">
+        <div className="bottom-10 mt-8 lg:mt-0">
+          {/* <div className="flex gap-x-8 justify-evenly lg:justify-normal">
             <a
               href="#"
               className="flex items-center gap-x-3 font-semibold text-2xl text-[#1DA1F2]"
@@ -69,7 +76,7 @@ const Hero = () => {
             >
               <FaLinkedin></FaLinkedin>{" "}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ const About = () => {
         <p className="text-lg text-[#8a90a2]">About Me</p>
       </div>
       <h2 className="text-6xl font-bold text-center mt-5 mb-[120px] text-[#292930]">
-        About Me
+        Personal Info
       </h2>
       <div className="flex flex-col lg:flex-row gap-16 px-[3%] lg:px-0">
         <div className="bg-[#FFDC60] img-bg overflow-hidden lg:w-[40%] rounded-[10px]">
