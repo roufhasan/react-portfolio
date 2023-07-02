@@ -30,10 +30,10 @@ const Hero = () => {
         <img src={profileImg} className="w-full sm:w-3/4 sm:mx-auto" />
       </div>
       <div className="realtive mt-16 lg:mt-0 lg:w-1/2">
-        <h3 className="text-3xl font-bold mb-2">
+        <h3 className="text-3xl font-bold mb-2 dark:text-white">
           Hi, <span className="text-[#5956e9]">I&apos;m</span>
         </h3>
-        <h2 className="text-[50px] sm:text-[66px] font-bold text-[#292930]">
+        <h2 className="text-[50px] sm:text-[66px] font-bold text-[#292930] dark:text-white">
           Rouf Hasan Hridoy
         </h2>
         <div className="font-semibold text-[#5956e9] text-2xl lg:text-4xl mt-6 mb-16">

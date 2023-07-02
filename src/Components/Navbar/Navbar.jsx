@@ -25,7 +25,9 @@ const Navbar = () => {
           to="home"
           smooth={true}
           duration={1500}
-          className="uppercase font-secondary text-3xl font-bold"
+          className={`uppercase font-secondary text-3xl font-bold ${
+            colorChange ? "text-white" : "text-black"
+          }`}
         >
           Rouf hasan
         </Link>

@@ -15,7 +15,7 @@ const About = () => {
         <div className="w-3 h-3 rounded-full bg-[#ffd109]"></div>
         <p className="text-lg text-[#8a90a2]">About Me</p>
       </div>
-      <h2 className="text-6xl font-bold text-center mt-5 mb-[120px] text-[#292930]">
+      <h2 className="text-6xl font-bold text-center mt-5 mb-[120px] text-[#292930] dark:text-white">
         Personal Info
       </h2>
       <div className="flex flex-col lg:flex-row gap-16 px-[3%] lg:px-0">
@@ -26,13 +26,13 @@ const About = () => {
           />
         </div>
         <div className="lg:w-[60%]">
-          <h3 className="text-4xl font-bold text-[#292930] mb-4">
+          <h3 className="text-4xl font-bold text-[#292930] dark:text-white mb-4">
             Rouf Hasan Hridoy
           </h3>
           <p className="uppercase font-medium text-sm text-[#5956e9] mb-6">
             MERN Stack Developer
           </p>
-          <p className="text-[#767676] text-lg leading-6 tracking-wide max-w-[575px]">
+          <p className="text-[#767676] dark:text-[#b4b4b4] text-lg leading-6 tracking-wide max-w-[575px]">
             As a Junior MERN Stack Developer, I possess an impressive arsenal of
             skills in HTML, CSS, Bootstrap, Tailwind, JavaScript, React,
             Firebase, ExpressJS and MongoDB. I excel in designing and
